@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Citizen Dashboard | CMP Portal</title>
+    <link rel="stylesheet" href="../assets/css/auth.css">
+</head>
+<body class="auth-page">
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Citizen Dashboard</title>
+
+    <link rel="stylesheet" href="index.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <aside class="sidebar">
+
+        <div>
+
+            <div class="logo">
+                <h2>CivicConnect</h2>
+            </div>
+
+            <div class="profile">
+                <div class="avatar"></div>
+
+                <div>
+                    <h4>Citizen Portal</h4>
+                    <p>Manage your requests</p>
+                </div>
+            </div>
+
+            
+            <ul class="menu">
+
+                <li class="active">
+                    <i class="fa-solid fa-table-columns"></i>
+                    Overview
+                </li>
+
+                <li>
+                    <i class="fa-regular fa-file-lines"></i>
+                    My Complaints
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-plus"></i>
+                    New Complaint
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-location-dot"></i>
+                    Status Tracking
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-headset"></i>
+                    Contact Support
+                </li>
+
+            </ul>
+
+        </div>
+
+        <div class="sidebar-footer">
+
+            <p>
+                <i class="fa-regular fa-circle-question"></i>
+                Help Center
+            </p>
+
+            <p>
+                <i class="fa-solid fa-right-from-bracket"></i>
+                Log Out
+            </p>
+
+        </div>
+
+    </aside>
+
+
+
+
+    
+    <main class="main-content">
+    
+        <div class="topbar">
+
+            <div class="nav-links">
+                <a class="nav-active">Dashboard</a>
+                <a>Reports</a>
+                <a>Resources</a>
+            </div>
+
+            <div class="top-right">
+
+                <div class="search-box">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Search activities...">
+                </div>
+
+                <i class="fa-regular fa-bell"></i>
+                <i class="fa-solid fa-gear"></i>
+
+            </div>
+
+        </div>
+
+        <!-- Complaint Header -->
+
+<section class="complaint-top">
+
+    <div class="complaint-left">
+
+        <button class="back-btn">
+            <i class="fa-solid fa-arrow-left"></i>
+        </button>
+
+        <div>
+
+            <h2>Complaint #GRV-2024-8842</h2>
+
+            <p>
+                Reported on Oct 24, 2024 • Pothole Repair Request
+            </p>
+
+        </div>
+
+    </div>
+
+    <div class="complaint-right">
+
+        <span class="progress-status">
+            ● In Progress
+        </span>
+
+        <button class="update-btn">
+            Update Info
+        </button>
+
+    </div>
+
+</section>
+<div class="complaint-layout">
+
+    <!-- LEFT COLUMN -->
+    <aside class="timeline-card">
+
+        <h3>Progress Timeline</h3>
+
+       <div class="progress-timeline">
+
+    <div class="timeline-step completed">
+
+        <div class="timeline-icon">
+            <i class="fa-solid fa-check"></i>
+        </div>
+
+        <div class="timeline-content">
+
+            <h4>Complaint Submitted</h4>
+
+            <p>24 Oct 2024 • 09:45 AM</p>
+
+        </div>
+
+    </div>
+
+
+    <div class="timeline-step completed">
+
+        <div class="timeline-icon">
+            <i class="fa-solid fa-check"></i>
+        </div>
+
+        <div class="timeline-content">
+
+            <h4>Verified by Department</h4>
+
+            <p>24 Oct 2024 • 12:30 PM</p>
+
+        </div>
+
+    </div>
+
+
+    <div class="timeline-step completed">
+
+        <div class="timeline-icon">
+            <i class="fa-solid fa-check"></i>
+        </div>
+
+        <div class="timeline-content">
+
+            <h4>Officer Assigned</h4>
+
+            <p>25 Oct 2024 • 10:10 AM</p>
+
+        </div>
+
+    </div>
+
+
+    <div class="timeline-step active">
+
+        <div class="timeline-icon">
+            <i class="fa-solid fa-person-digging"></i>
+        </div>
+
+        <div class="timeline-content">
+
+            <h4>Work In Progress</h4>
+
+            <p>Repair team is on site.</p>
+
+        </div>
+
+    </div>
+
+
+    <div class="timeline-step">
+
+        <div class="timeline-icon">
+            <i class="fa-solid fa-flag-checkered"></i>
+        </div>
+
+        <div class="timeline-content">
+
+            <h4>Resolved</h4>
+
+            <p>Pending Completion</p>
+
+        </div>
+
+    </div>
+
+</div>
+
+    </aside>
+
+
+    <!-- CENTER COLUMN -->
+    <section class="center-content">
+
+        <div class="map-card">
+
+            <h3>Location</h3>
+
+           <div class="map-placeholder">
+
+    <img
+        src="https://images.unsplash.com/photo-1524661135-423995f22d0b?w=1200&auto=format&fit=crop&q=80"
+        alt="Complaint Location">
+
+    <div class="map-overlay">
+
+        <div class="location-tag">
+            <i class="fa-solid fa-location-dot"></i>
+            Ward 12, Indore
+        </div>
+
+    </div>
+
+</div>
+
+        </div>
+
+
+     <div class="details-card">
+
+    <div class="details-header">
+
+        <h3>Complaint Details</h3>
+
+        <span class="priority high">
+            High Priority
+        </span>
+
+    </div>
+
+
+    <div class="details-grid">
+
+        <div class="detail-box">
+
+            <label>Complaint ID</label>
+
+            <p>GRV-2024-8842</p>
+
+        </div>
+
+        <div class="detail-box">
+
+            <label>Category</label>
+
+            <p>Road Maintenance</p>
+
+        </div>
+
+        <div class="detail-box">
+
+            <label>Department</label>
+
+            <p>Municipal Engineering</p>
+
+        </div>
+
+        <div class="detail-box">
+
+            <label>Assigned Officer</label>
+
+            <p>Rahul Sharma</p>
+
+        </div>
+
+        <div class="detail-box">
+
+            <label>Location</label>
+
+            <p>Ward 12, Vijay Nagar, Indore</p>
+
+        </div>
+
+        <div class="detail-box">
+
+            <label>Expected Completion</label>
+
+            <p>28 Oct 2024</p>
+
+        </div>
+
+    </div>
+
+
+    <div class="description-box">
+
+        <label>Description</label>
+
+        <p>
+            A large pothole has developed in the middle of the road,
+            causing heavy traffic congestion and posing a safety risk
+            for two-wheelers and pedestrians. Immediate repair is
+            requested to prevent accidents.
+        </p>
+
+    </div>
+
+
+    <div class="action-buttons">
+
+        <button class="primary-btn">
+
+            <i class="fa-solid fa-file-arrow-down"></i>
+
+            Download Report
+
+        </button>
+
+        <button class="secondary-btn">
+
+            <i class="fa-solid fa-share-nodes"></i>
+
+            Share Status
+
+        </button>
+
+    </div>
+
+</div>
+
+
+        <div class="communication-card">
+
+    <div class="chat-header">
+
+        <h3>Communication</h3>
+
+        <span class="online-status">
+            <i class="fa-solid fa-circle"></i>
+            Officer Online
+        </span>
+
+    </div>
+
+
+    <div class="chat-box">
+
+        <div class="message officer">
+
+            <div class="avatar-circle blue">
+                RS
+            </div>
+
+            <div class="message-content">
+
+                <h5>Rahul Sharma</h5>
+
+                <p>
+                    Your complaint has been assigned to our road maintenance team.
+                    They will reach the location shortly.
+                </p>
+
+                <small>10:15 AM</small>
+
+            </div>
+
+        </div>
+
+
+        <div class="message citizen">
+
+            <div class="message-content">
+
+                <h5>You</h5>
+
+                <p>
+                    Thank you. Please repair it as soon as possible because
+                    accidents are happening frequently.
+                </p>
+
+                <small>10:18 AM</small>
+
+            </div>
+
+        </div>
+
+
+        <div class="message officer">
+
+            <div class="avatar-circle green">
+                RS
+            </div>
+
+            <div class="message-content">
+
+                <h5>Rahul Sharma</h5>
+
+                <p>
+                    Our team has started the repair work. We expect to finish it today.
+                </p>
+
+                <small>10:32 AM</small>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="chat-input">
+
+        <input
+            type="text"
+            placeholder="Type your message...">
+
+        <button>
+
+            <i class="fa-solid fa-paper-plane"></i>
+
+        </button>
+
+    </div>
+
+  </div>
+
+    </section>
+
+
+    <!-- RIGHT COLUMN -->
+
+    <aside class="evidence-card">
+
+    <div class="card-header">
+
+        <h3>Evidence Photos</h3>
+
+        <button class="upload-btn">
+            <i class="fa-solid fa-plus"></i>
+            Add More
+        </button>
+
+    </div>
+
+    <div class="evidence-gallery">
+
+        <div class="photo-card">
+
+            <img src="https://images.unsplash.com/photo-1515263487990-61b07816b324?w=800"
+                 alt="Complaint Image">
+
+            <span>Before Repair</span>
+
+        </div>
+
+        <div class="photo-card">
+
+            <img src="https://images.unsplash.com/photo-1529429617124-aee711a5ac1c?w=800"
+                 alt="Complaint Image">
+
+            <span>Site Inspection</span>
+        </div>
+    </div>
+</aside>
+
+</div>
+
+        <footer>
+
+            <span>CivicConnect</span>
+
+            <span>
+                © 2024 CivicConnect Municipal Corporation.
+            </span>
+            <span>Privacy Policy</span>
+            <span>Terms of Service</span>
+        </footer>
+    </main>
+</div>
+
+<button class="floating-btn">
+    +
+</button>
+
+</body>
+</html>

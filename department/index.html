@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Officer Dashboard</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <link rel="stylesheet" href="index.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<!-- ================= SIDEBAR ================= -->
+
+<aside class="sidebar">
+
+<div class="logo">
+
+<h2>CivicConnect</h2>
+<p>Officer Dashboard</p>
+
+</div>
+
+<ul class="menu">
+
+<li class="active">
+<i class="fa-solid fa-table-columns"></i>
+Overview
+</li>
+
+<li>
+<i class="fa-solid fa-file-lines"></i>
+My Complaints
+</li>
+
+<li>
+<i class="fa-solid fa-user-check"></i>
+Assign Complaint
+</li>
+
+<li>
+<i class="fa-solid fa-chart-line"></i>
+Reports
+</li>
+
+<li>
+<i class="fa-solid fa-comments"></i>
+Citizen Feedback
+</li>
+
+<li>
+<i class="fa-solid fa-headset"></i>
+Support
+</li>
+
+</ul>
+
+<div class="officer">
+
+<img src="https://i.pravatar.cc/60" alt="">
+
+<div>
+
+<h4>Officer James</h4>
+<p>Badge #4492</p>
+
+</div>
+
+</div>
+
+</aside>
+
+<!-- ================= MAIN ================= -->
+
+<main class="main">
+
+<!-- TOPBAR -->
+
+<header class="topbar">
+
+<h2>Dashboard</h2>
+
+<div class="search">
+
+<i class="fa-solid fa-magnifying-glass"></i>
+
+<input
+type="text"
+placeholder="Search complaint, citizen..."
+>
+
+</div>
+
+<div class="top-actions">
+
+<i class="fa-regular fa-bell"></i>
+
+<i class="fa-solid fa-gear"></i>
+
+<button>
+
+Submit Report
+
+</button>
+
+</div>
+
+</header>
+
+<!-- STATS -->
+
+<section class="stats">
+
+<div class="card">
+
+<i class="fa-solid fa-file-lines"></i>
+
+<h4>Total Complaints</h4>
+
+<h2>1,284</h2>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-hourglass-half"></i>
+
+<h4>Pending</h4>
+
+<h2>42</h2>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-bolt"></i>
+
+<h4>Active Tasks</h4>
+
+<h2>156</h2>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-circle-check"></i>
+
+<h4>Resolved</h4>
+
+<h2>18</h2>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-clock"></i>
+
+<h4>Avg. Resolution</h4>
+
+<h2>2.4 Days</h2>
+
+</div>
+
+</section>
+
+<!-- CONTENT -->
+
+<section class="content">
+
+<!-- LEFT -->
+
+<div class="left">
+
+<div class="table-card">
+
+<div class="title">
+
+<h3>High Priority Complaints</h3>
+
+<a href="#">View All</a>
+
+</div>
+
+<div class="complaint-list">
+
+    <!-- Complaint 1 -->
+
+    <div class="complaint-card">
+
+        <div class="complaint-header">
+
+            <div>
+
+                <h4>💧 Water Leakage</h4>
+
+                <span>#CMP-1024</span>
+
+            </div>
+
+            <span class="priority high">
+
+                High Priority
+
+            </span>
+
+        </div>
+
+        <div class="complaint-body">
+
+            <p>
+                <i class="fa-solid fa-location-dot"></i>
+
+                Vijay Nagar, Indore
+            </p>
+
+            <p>
+
+                <i class="fa-solid fa-user"></i>
+
+                Rahul Sharma
+
+            </p>
+
+            <p>
+
+                <i class="fa-regular fa-clock"></i>
+
+                Reported 20 min ago
+
+            </p>
+
+        </div>
+
+        <div class="complaint-footer">
+
+            <span class="status assigned">
+
+                Assigned
+
+            </span>
+
+            <div class="buttons">
+
+                <button class="view-btn">
+
+                    <i class="fa-regular fa-eye"></i>
+
+                    View
+
+                </button>
+
+                <button class="assign-btn">
+
+                    Assign
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</div>
+
+<div class="quick-actions">
+
+    <div class="quick-header">
+
+        <h3>⚡ Quick Actions</h3>
+
+        <p>Frequently used officer operations</p>
+
+    </div>
+
+    <div class="action-grid">
+
+        <div class="action-card">
+
+            <div class="action-icon blue">
+                <i class="fa-solid fa-user-check"></i>
+            </div>
+
+            <h4>Assign</h4>
+
+            <span>Complaint</span>
+
+        </div>
+
+        <div class="action-card">
+
+            <div class="action-icon green">
+                <i class="fa-solid fa-arrows-rotate"></i>
+            </div>
+
+            <h4>Update</h4>
+
+            <span>Status</span>
+
+        </div>
+
+        <div class="action-card">
+
+            <div class="action-icon red">
+                <i class="fa-solid fa-triangle-exclamation"></i>
+            </div>
+
+            <h4>Escalate</h4>
+
+            <span>Complaint</span>
+
+        </div>
+
+        <div class="action-card">
+
+            <div class="action-icon orange">
+                <i class="fa-solid fa-file-lines"></i>
+            </div>
+
+            <h4>Generate</h4>
+
+            <span>Report</span>
+
+        </div>
+
+        <div class="action-card">
+
+            <div class="action-icon purple">
+                <i class="fa-solid fa-location-dot"></i>
+            </div>
+
+            <h4>Schedule</h4>
+
+            <span>Inspection</span>
+
+        </div>
+
+        <div class="action-card">
+
+            <div class="action-icon cyan">
+                <i class="fa-solid fa-phone"></i>
+            </div>
+
+            <h4>Contact</h4>
+
+            <span>Citizen</span>
+
+        </div>
+
+    </div>
+
+</div>
+<!-- RIGHT -->
+
+<div class="task-card">
+
+    <div class="task-header">
+
+        <h3>📋 My Tasks</h3>
+
+        <a href="#">View All</a>
+
+    </div>
+
+    <div class="task-item">
+
+        <div class="task-top">
+
+            <h4>Visit Water Leakage Site</h4>
+
+            <span class="task-priority high">High</span>
+
+        </div>
+
+        <p>📍 Vijay Nagar</p>
+
+        <div class="task-progress">
+
+            <div class="progress-fill progress-80"></div>
+
+        </div>
+
+        <div class="task-bottom">
+
+            <span>⏰ Today • 2:00 PM</span>
+
+            <button>Open</button>
+
+        </div>
+
+    </div>
+
+    <div class="task-item">
+
+        <div class="task-top">
+
+            <h4>Verify Road Repair</h4>
+
+            <span class="task-priority medium">Medium</span>
+
+        </div>
+
+        <p>📍 Palasia</p>
+
+        <div class="task-progress">
+
+            <div class="progress-fill progress-40"></div>
+
+        </div>
+
+        <div class="task-bottom">
+
+            <span>Tomorrow • 10:00 AM</span>
+
+            <button>Open</button>
+
+        </div>
+
+    </div>
+
+    <div class="task-item">
+
+        <div class="task-top">
+
+            <h4>Close Garbage Complaint</h4>
+
+            <span class="task-priority low">Completed</span>
+
+        </div>
+
+        <p>📍 Rajendra Nagar</p>
+
+        <div class="task-progress">
+
+            <div class="progress-fill progress-100"></div>
+
+        </div>
+
+        <div class="task-bottom">
+
+            <span>Completed</span>
+
+            <button>View</button>
+
+        </div>
+
+    </div>
+
+</div>
+</div>
+
+<div class="priority-card">
+
+    <div class="priority-header">
+
+        <h3>🚨 Today's Priority Queue</h3>
+
+        <span>23 Complaints</span>
+
+    </div>
+
+    <div class="priority-item">
+
+        <div class="priority-left">
+
+            <span class="priority-dot red"></span>
+
+            <div>
+
+                <h4>Water Leakage</h4>
+
+                <p>8 Active Complaints</p>
+
+            </div>
+
+        </div>
+
+        <button>View</button>
+
+    </div>
+
+    <div class="priority-item">
+
+        <div class="priority-left">
+
+            <span class="priority-dot orange"></span>
+
+            <div>
+
+                <h4>Road Damage</h4>
+
+                <p>6 Active Complaints</p>
+
+            </div>
+
+        </div>
+
+        <button>View</button>
+
+    </div>
+
+    <div class="priority-item">
+
+        <div class="priority-left">
+
+            <span class="priority-dot yellow"></span>
+
+            <div>
+
+                <h4>Garbage Collection</h4>
+
+                <p>5 Active Complaints</p>
+
+            </div>
+
+        </div>
+
+        <button>View</button>
+
+    </div>
+
+    <div class="priority-item">
+
+        <div class="priority-left">
+
+            <span class="priority-dot green"></span>
+
+            <div>
+
+                <h4>Street Lights</h4>
+
+                <p>4 Active Complaints</p>
+
+            </div>
+
+        </div>
+
+        <button>View</button>
+
+    </div>
+
+</div>
+
+</div>
+
+</section>
+
+</main>
+
+</div>
+
+</body>
+</html>

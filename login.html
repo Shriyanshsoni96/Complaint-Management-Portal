@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sign in to the Complaint Management Portal — Citizen, Department Officer, or Administrator access.">
+    <title>Login | Complaint Management Portal</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/auth.css">
+</head>
+<body class="auth-page">
+
+    <a href="#auth-main" class="skip-link">Skip to login form</a>
+
+    <div id="toast-container" class="toast-container" aria-live="polite" aria-atomic="true"></div>
+
+    <!-- Top bar -->
+    <header class="auth-header">
+        <a href="index.html" class="logo" aria-label="Back to home">
+            <span class="logo-icon" aria-hidden="true"><i class="fa-solid fa-shield-halved"></i></span>
+            <span class="logo-text">
+                <strong>CMP Portal</strong>
+                <small>Grievance Redressal System</small>
+            </span>
+        </a>
+        <div class="auth-header-actions">
+            <button type="button" class="btn-icon theme-toggle" id="theme-toggle" aria-label="Toggle dark mode" title="Toggle theme">
+                <i class="fa-solid fa-moon" aria-hidden="true"></i>
+            </button>
+            <a href="register.html" class="btn btn-ghost">Create Account</a>
+        </div>
+    </header>
+
+    <main id="auth-main" class="auth-layout">
+
+        <!-- Left panel — branding -->
+        <aside class="auth-branding" aria-hidden="true">
+            <div class="branding-content">
+                <span class="branding-badge">
+                    <i class="fa-solid fa-lock" aria-hidden="true"></i>
+                    Secure Login
+                </span>
+                <h1>Welcome Back</h1>
+                <p>Access your portal to submit complaints, manage assignments, or administer the system.</p>
+
+                <ul class="branding-features">
+                    <li>
+                        <i class="fa-solid fa-shield-check" aria-hidden="true"></i>
+                        <span>256-bit encrypted sessions</span>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-clock" aria-hidden="true"></i>
+                        <span>Real-time complaint tracking</span>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-users" aria-hidden="true"></i>
+                        <span>Role-based secure access</span>
+                    </li>
+                </ul>
+
+                <div class="branding-stats glass-card">
+                    <div class="branding-stat">
+                        <strong>12,500+</strong>
+                        <span>Resolved</span>
+                    </div>
+                    <div class="branding-stat">
+                        <strong>94%</strong>
+                        <span>Satisfaction</span>
+                    </div>
+                    <div class="branding-stat">
+                        <strong>48h</strong>
+                        <span>Avg. Resolution</span>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <section class="auth-form-panel">
+            <div class="auth-card">
+                <div class="auth-card-header">
+                    <h2>Sign In</h2>
+                    <p>Select your role and enter your credentials</p>
+                </div>
+
+
+                <div class="role-tabs" role="tablist" aria-label="Select login role">
+                    <button type="button" class="role-tab active" role="tab" id="tab-citizen" aria-selected="true" aria-controls="panel-citizen" data-role="citizen">
+                        <i class="fa-solid fa-user" aria-hidden="true"></i>
+                        Citizen
+                    </button>
+                    <button type="button" class="role-tab" role="tab" id="tab-officer" aria-selected="false" aria-controls="panel-officer" data-role="officer">
+                        <i class="fa-solid fa-user-tie" aria-hidden="true"></i>
+                        Officer
+                    </button>
+                    <button type="button" class="role-tab" role="tab" id="tab-admin" aria-selected="false" aria-controls="panel-admin" data-role="admin">
+                        <i class="fa-solid fa-user-shield" aria-hidden="true"></i>
+                        Admin
+                    </button>
+                </div>
+
+
+                <form id="login-form" class="auth-form" novalidate>
+                    <input type="hidden" id="login-role" name="role" value="citizen">
+
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <div class="input-group" id="email-group">
+                            <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                placeholder="you@example.com"
+                                autocomplete="email"
+                                required
+                                aria-describedby="email-error"
+                            >
+                        </div>
+
+                        <span class="form-error" id="email-error" role="alert"></span>
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <div class="input-group" id="password-group">
+                            <i class="fa-solid fa-lock" aria-hidden="true"></i>
+                            <input
+                                type="password"
+                                id="password"
+                                name="password"
+                                placeholder="Enter your password"
+                                autocomplete="current-password"
+                                required
+                                aria-describedby="password-error"
+                            >
+                            <button type="button" class="input-action" id="toggle-password" aria-label="Show password" title="Show password">
+                                <i class="fa-solid fa-eye" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                        <span class="form-error" id="password-error" role="alert"></span>
+                    </div>
+
+                    
+                    <div class="form-row">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="remember-me" name="rememberMe">
+                            <span class="checkbox-custom" aria-hidden="true"></span>
+                            Remember me
+                        </label>
+                        <a href="forgot-password.html" class="link-primary">Forgot password?</a>
+                    </div>
+
+                    <!-- Submit -->
+                    <button type="submit" class="btn btn-primary btn-block btn-lg submit-btn" id="login-btn">
+                        <span class="btn-text">Sign In</span>
+                        <span class="btn-loader" aria-hidden="true"><i class="fa-solid fa-spinner fa-spin"></i></span>
+                    </button>
+                </form>
+
+                <!-- Demo credentials hint -->
+                <div class="demo-hint" id="demo-hint">
+                    <p><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Demo credentials</p>
+                    <code id="demo-cred">citizen@cmp.gov.in / Citizen@123</code>
+                </div>
+
+                <p class="auth-footer-text">
+                    Don't have an account?
+                    <a href="register.html" class="link-primary">Register here</a>
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="assets/js/auth-common.js"></script>
+    <script src="assets/js/login.js"></script>
+</body>
+</html>
