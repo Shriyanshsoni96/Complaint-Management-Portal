@@ -1,0 +1,22 @@
+node_modules
+.env
+.env.local
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Uploaded files
+src/uploads/complaints/*
+src/uploads/profiles/*
+src/uploads/temp/*
+!src/uploads/complaints/.gitkeep
+!src/uploads/profiles/.gitkeep
+!src/uploads/temp/.gitkeep
+
+# Editor
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store

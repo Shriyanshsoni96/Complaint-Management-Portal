@@ -1,0 +1,34 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode: ThemeContext toggles `.dark` on <html>. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@keyframes toast-slide-in {
+  from {
+    transform: translateY(-0.5rem);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-toast-slide-in {
+  animation: toast-slide-in 0.2s ease-out;
+}
+
+@keyframes modal-in {
+  from {
+    transform: scale(0.96);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.animate-modal-in {
+  animation: modal-in 0.15s ease-out;
+}
